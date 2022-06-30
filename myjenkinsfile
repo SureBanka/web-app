@@ -1,8 +1,8 @@
 //scripted pipeline
-node(""){
- def MHD = tool name: "maven3.8.4"
-    stage('1.Initiation'){
-    sh "echo Start of Project"
+node{
+def MHD = tool name: "maven3.8.4"
+  stage ("1.Initialtion"){
+    sh "echo Start of barclay application build"
     }
     stage('2.CloneCode'){
     git "https://github.com/SureBanka/web-app.git"
