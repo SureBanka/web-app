@@ -5,7 +5,7 @@ node{
     sh "echo Start of Project"
     }
     stage('2.CloneCode'){
-    
+    git "https://github.com/SureBanka/web-app.git"
     }
     stage('3.buildMaven'){
     sh "${MHD}/bin/mvn package"
