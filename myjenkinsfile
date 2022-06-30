@@ -1,5 +1,5 @@
 //scripted pipeline
-node{
+node(""){
  def MHD = tool name: "maven3.8.4"
     stage('1.Initiation'){
     sh "echo Start of Project"
